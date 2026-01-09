@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claire’s Pastry Delight</title>
+  <style>
+    body {
+      font-family: 'Brush Script MT', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff8f0;
+      color: #333;
+    }
+    header {
+      background-color: #f8c8dc;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #6b2d5c;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #6b2d5c;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('https://i.pinimg.com/1200x/dc/0f/5a/dc0f5aa43413f3b9ef47e7e026d7a103.jpg') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 5px #000;
+    }
+    .hero h2 {
+      font-size: 3em;
+    }
+    .section {
+      padding: 40px;
+      text-align: center;
+    }
+    .products {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 250px;
+      padding: 20px;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .card h3 {
+      margin: 15px 0 10px;
+      color: #6b2d5c;
+    }
+    .card p {
+      font-size: 0.9em;
+      color: #555;
+    }
+    .price {
+      font-weight: bold;
+      color: #e76f51;
+    }
+    footer {
+      background-color: #f8c8dc;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    footer p {
+      margin: 0;
+      color: #6b2d5c;
+    }
+    .contact-form {
+      max-width: 400px;
+      margin: auto;
+      text-align: left;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .contact-form button {
+      background-color: #6b2d5c;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .contact-form button:hover {
+      background-color: #4a1f3d;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Claire’s Pastry Delight</h1>
+    <nav>
+      <a href="#products">Pastries</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h2></h2>
+  </div>
+
+  <section id="products" class="section">
+    <h2>Our Pastries</h2>
+    <div class="products">
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/25/2f/e8/252fe8b4e1189711a433b7fef10744ca.jpg" alt="Croissant">
+        <h3>Butter Croissant</h3>
+        <p>Flaky, golden, and buttery perfection.</p>
+        <p class="price">₱60</p>
+      </div>
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/c1/38/70/c13870f5ed8ed28f3f6716cbdfb995b7.jpg" alt="Cupcake">
+        <h3>Chocolate Cupcake</h3>
+        <p>Rich chocolate topped with creamy frosting.</p>
+        <p class="price">₱75</p>
+      </div>
+      <div class="card">
+        <img src="https://i.pinimg.com/1200x/2e/73/f6/2e73f61e46e6d991080623958bd6712f.jpg" alt="Macarons">
+        <h3>French Macarons</h3>
+        <p>Delicate shells with sweet fillings.</p>
+        <p class="price">₱120 (box of 6)</p>
+      </div>
+      <div class="card">
+        <img src="https://i.pinimg.com/1200x/e8/9f/f1/e89ff145586f0eaba360e039a7b98012.jpg" alt="Cheesecake">
+        <h3>Classic Cheesecake</h3>
+        <p>Creamy and smooth with a buttery crust.</p>
+        <p class="price">₱250</p>
+      </div>
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/30/6a/cf/306acf4266f69e797e5a9bcd25adcaf3.jpg" alt="Red Velvet Cake">
+        <h3>Red Velvet Cake Slice</h3>
+        <p>Moist layers with cream cheese frosting.</p>
+        <p class="price">₱150</p>
+      </div>
+      <div class="card">
+        <img src="https://i.pinimg.com/1200x/4a/a5/0a/4aa50a06d59af6a6e08b434d787527c6.jpg" alt="Apple Pie">
+        <h3>Apple Pie</h3>
+        <p>Sweet apples baked in a golden crust.</p>
+        <p class="price">₱200</p>
+      </div>
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/42/fc/e2/42fce25710ca53d1168c426505c9a1f0.jpg" alt="Danish Pastry">
+        <h3>Fruit Danish</h3>
+        <p>Flaky pastry topped with fresh fruit.</p>
+        <p class="price">₱90</p>
+      </div>
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/55/43/0e/55430e5bd2936d0b1363776df5258361.jpg" alt="Brownies">
+        <h3>Fudge Brownies</h3>
+        <p>Dense, chocolatey, and irresistible.</p>
+        <p class="price">₱80</p>
+      </div>
+      <div class="card">
+        <img src="https://i.pinimg.com/1200x/df/57/de/df57deee68260dfcc5e8dab4dc7ee37e.jpg" alt="Donut">
+        <h3>Glazed Donut</h3>
+        <p>Soft and sweet with a shiny glaze.</p>
+        <p class="price">₱50</p>
+      </div>
+      <div class="card">
+        <img src="https://i.pinimg.com/1200x/04/1d/cb/041dcb801a04110e9ebff6ac65339234.jpg" alt="Fruit Tart">
+        <h3>Fruit Tart</h3>
+        <p>Fresh fruits on creamy custard in a crisp shell.</p>
+        <p class="price">₱180</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>At Claire’s Pastry Delight, we believe every bite should bring joy. Our pastries are crafted with love, using the finest ingredients to make your celebrations sweeter.</p>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <div class="contact-form">
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Claire’s Pastry Delight | Made with ❤️</p>
+  </footer>
+
+</body>
+</html>
